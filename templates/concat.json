@@ -1,0 +1,4 @@
+{
+    "description": "Minimal template that concats instruction and input placeholders.",
+    "prompt_input": "{instruction}\n\n{input}"
+}
