@@ -44,6 +44,8 @@ def evaluate(
         prompt_template_name="alpaca",
     )
 
+    dataset = dataset.remove_columns(["input", "instruction", "output"])
+
     dataloader = DataLoader(
         dataset, batch_size=batch_size, collate_fn=data_collator
     )
